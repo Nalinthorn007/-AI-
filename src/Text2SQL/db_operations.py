@@ -1,5 +1,4 @@
-import pandas as pd
-import mariadb
+import pandas as pd 
 from typing import Dict, Any
 from config_db.db_warehouse import get_db_connection
 
