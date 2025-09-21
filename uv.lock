@@ -498,6 +498,7 @@ dependencies = [
     { name = "langchain-anthropic" },
     { name = "langchain-community" },
     { name = "langchain-groq" },
+    { name = "langchain-huggingface" },
     { name = "langchain-openai" },
     { name = "langgraph" },
     { name = "mariadb" },
@@ -524,6 +525,7 @@ requires-dist = [
     { name = "langchain-anthropic", specifier = ">=0.3.18" },
     { name = "langchain-community", specifier = ">=0.3.27" },
     { name = "langchain-groq", specifier = ">=0.3.7" },
+    { name = "langchain-huggingface", specifier = ">=0.3.1" },
     { name = "langchain-openai", specifier = ">=0.3.31" },
     { name = "langgraph", specifier = ">=0.6.4" },
     { name = "mariadb", specifier = ">=1.1.13" },
@@ -647,7 +649,6 @@ dependencies = [
     { name = "numpy" },
     { name = "packaging" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/5c/f4/7c2136f4660ca504266cc08b38df2aa1db14fea93393b82e099ff34d7290/faiss_cpu-1.11.0.post1.tar.gz", hash = "sha256:06b1ea9ddec9e4d9a41c8ef7478d493b08d770e9a89475056e963081eed757d1", size = 70543 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ef/c2/28c147fec80609b6ce8578df27d7fafe02d97726df2d261c446176e6ceda/faiss_cpu-1.11.0.post1-cp313-cp313-macosx_13_0_x86_64.whl", hash = "sha256:caedaddfbfe365e3f1a57d5151cf94ea7b73c0e4789caf68eae05e0e10ca9fbf", size = 7913678 },
     { url = "https://files.pythonhosted.org/packages/ff/71/7b06a5294e1d597f721016c6286a0c6e9912ed235d5e5d3600d4fd100ba8/faiss_cpu-1.11.0.post1-cp313-cp313-macosx_14_0_arm64.whl", hash = "sha256:202d11f1d973224ca0bde13e7ee8b862b6de74287e626f9f8820b360e6253d12", size = 3313956 },
@@ -1523,6 +1524,20 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/54/9d/1bbe0b8d8368ac1df2eabd14be93e052cddac969573b910db4457237bce2/langchain_groq-0.3.7.tar.gz", hash = "sha256:4d799aa565f31e51c632f0f20c588f21c5a0e6c6dd2303efaef43351f9b41bd4", size = 25004 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/9d/31/5f32d15105d0160c3753113d5cca5787236c6d2717d25126597d8adc39dd/langchain_groq-0.3.7-py3-none-any.whl", hash = "sha256:2e13870534c032fe1facde3a6ab1fb59af6f1e7a2763125ad549d8e403fc9d00", size = 16418 },
+]
+
+[[package]]
+name = "langchain-huggingface"
+version = "0.3.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "huggingface-hub" },
+    { name = "langchain-core" },
+    { name = "tokenizers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3f/15/f832ae485707bf52f9a8f055db389850de06c46bc6e3e4420a0ef105fbbf/langchain_huggingface-0.3.1.tar.gz", hash = "sha256:0a145534ce65b5a723c8562c456100a92513bbbf212e6d8c93fdbae174b41341", size = 25154 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/bf/26/7c5d4b4d3e1a7385863acc49fb6f96c55ccf941a750991d18e3f6a69a14a/langchain_huggingface-0.3.1-py3-none-any.whl", hash = "sha256:de10a692dc812885696fbaab607d28ac86b833b0f305bccd5d82d60336b07b7d", size = 27609 },
 ]
 
 [[package]]
